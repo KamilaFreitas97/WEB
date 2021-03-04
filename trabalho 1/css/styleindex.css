@@ -1,0 +1,227 @@
+.tittle{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    left: 45%;
+    top: 10px;
+    /*position: absolute;*/
+    color: #fff;
+    margin-top: -8px;
+    padding: 5px;
+    background-color: black;
+    
+
+    
+}
+
+.font{
+    color: #ffff;
+    margin-top: 5px;
+
+}
+
+.tittle .font:hover{
+    transform: scale(2);
+    opacity: 0.9;
+    color: rgb(99, 97, 97);
+}
+
+.tittle a{
+    text-decoration: none;
+
+}
+
+.menu, .menu2{
+    width: 100%;
+    height: 30px;
+    margin-top: -2%;
+   /* display: inline-block;*/
+    background-color: rgb(37, 36, 36);
+
+}
+.menu ul li:hover, .menu2 ul li:hover{
+    opacity: 0.5;/*cor dos nomes do menu*/
+    transform: scale(1.5);
+    color: rgb(99, 97, 97);
+
+}
+
+.menu ul, .menu2 ul{
+    list-style: none;
+}
+.menu ul li{
+    padding: 0%;
+    float: left;
+    margin-left: 120px; /*cuidando da margem de cima do menu --> os nomes lado esquerdo menu*/
+    margin-top: 10px; /*margem de baixo do menu */
+}
+.menu ul li a{
+    padding: 0%;/*tam da palavras menu*/
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.menu2 ul li{
+    padding: 0%;
+    float: right;
+    margin-right: 120px; /*cuidando da margem de cima do menu --> os nomes lado direito do menu*/
+    margin-top: -5px; /*margem de baixo do menu */
+    
+
+}
+
+.menu2 ul li a{
+    padding: 0%;/*tam da palavras menu*/
+    text-decoration-line: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+.slideshow div img{
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #666;
+}
+/*
+.slideshow{
+    max-width: 1000px;
+    position: relative;
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #666;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+img{
+    vertical-align: middle;
+}
+
+
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+
+.inner{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+*/
+
+*{
+    box-sizing: border-box;
+}
+.slidefade{
+    display: none;
+}
+img{
+    vertical-align: middle;
+}
+
+.slide-cont{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+.inner{
+    display: none;
+}
+.inner{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+
+} 
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 10px 10px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+ 
+
+.rodape{
+    width: 100%;
+    margin-bottom: 0%;
+    text-align: center;
+    background-color: rgb(22, 21, 21);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: #fff;
+
+}
